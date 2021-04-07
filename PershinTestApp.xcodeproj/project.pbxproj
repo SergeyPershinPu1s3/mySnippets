@@ -1,0 +1,598 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		DD1CC085261DD817004CADE0 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD1CC084261DD817004CADE0 /* AppDelegate.swift */; };
+		DD1CC087261DD817004CADE0 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD1CC086261DD817004CADE0 /* SceneDelegate.swift */; };
+		DD1CC089261DD817004CADE0 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD1CC088261DD817004CADE0 /* ViewController.swift */; };
+		DD1CC08C261DD817004CADE0 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DD1CC08A261DD817004CADE0 /* Main.storyboard */; };
+		DD1CC08E261DD81A004CADE0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DD1CC08D261DD81A004CADE0 /* Assets.xcassets */; };
+		DD1CC091261DD81A004CADE0 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DD1CC08F261DD81A004CADE0 /* LaunchScreen.storyboard */; };
+		DD1CC09C261DD81A004CADE0 /* PershinTestAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD1CC09B261DD81A004CADE0 /* PershinTestAppTests.swift */; };
+		DD1CC0A7261DD81A004CADE0 /* PershinTestAppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD1CC0A6261DD81A004CADE0 /* PershinTestAppUITests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		DD1CC098261DD81A004CADE0 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = DD1CC079261DD817004CADE0 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = DD1CC080261DD817004CADE0;
+			remoteInfo = PershinTestApp;
+		};
+		DD1CC0A3261DD81A004CADE0 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = DD1CC079261DD817004CADE0 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = DD1CC080261DD817004CADE0;
+			remoteInfo = PershinTestApp;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		DD1CC081261DD817004CADE0 /* PershinTestApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PershinTestApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		DD1CC084261DD817004CADE0 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		DD1CC086261DD817004CADE0 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		DD1CC088261DD817004CADE0 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		DD1CC08B261DD817004CADE0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		DD1CC08D261DD81A004CADE0 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		DD1CC090261DD81A004CADE0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		DD1CC092261DD81A004CADE0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DD1CC097261DD81A004CADE0 /* PershinTestAppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PershinTestAppTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		DD1CC09B261DD81A004CADE0 /* PershinTestAppTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PershinTestAppTests.swift; sourceTree = "<group>"; };
+		DD1CC09D261DD81A004CADE0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DD1CC0A2261DD81A004CADE0 /* PershinTestAppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PershinTestAppUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		DD1CC0A6261DD81A004CADE0 /* PershinTestAppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PershinTestAppUITests.swift; sourceTree = "<group>"; };
+		DD1CC0A8261DD81A004CADE0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		DD1CC07E261DD817004CADE0 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DD1CC094261DD81A004CADE0 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DD1CC09F261DD81A004CADE0 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		DD1CC078261DD817004CADE0 = {
+			isa = PBXGroup;
+			children = (
+				DD1CC083261DD817004CADE0 /* PershinTestApp */,
+				DD1CC09A261DD81A004CADE0 /* PershinTestAppTests */,
+				DD1CC0A5261DD81A004CADE0 /* PershinTestAppUITests */,
+				DD1CC082261DD817004CADE0 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		DD1CC082261DD817004CADE0 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				DD1CC081261DD817004CADE0 /* PershinTestApp.app */,
+				DD1CC097261DD81A004CADE0 /* PershinTestAppTests.xctest */,
+				DD1CC0A2261DD81A004CADE0 /* PershinTestAppUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		DD1CC083261DD817004CADE0 /* PershinTestApp */ = {
+			isa = PBXGroup;
+			children = (
+				DD1CC084261DD817004CADE0 /* AppDelegate.swift */,
+				DD1CC086261DD817004CADE0 /* SceneDelegate.swift */,
+				DD1CC088261DD817004CADE0 /* ViewController.swift */,
+				DD1CC08A261DD817004CADE0 /* Main.storyboard */,
+				DD1CC08D261DD81A004CADE0 /* Assets.xcassets */,
+				DD1CC08F261DD81A004CADE0 /* LaunchScreen.storyboard */,
+				DD1CC092261DD81A004CADE0 /* Info.plist */,
+			);
+			path = PershinTestApp;
+			sourceTree = "<group>";
+		};
+		DD1CC09A261DD81A004CADE0 /* PershinTestAppTests */ = {
+			isa = PBXGroup;
+			children = (
+				DD1CC09B261DD81A004CADE0 /* PershinTestAppTests.swift */,
+				DD1CC09D261DD81A004CADE0 /* Info.plist */,
+			);
+			path = PershinTestAppTests;
+			sourceTree = "<group>";
+		};
+		DD1CC0A5261DD81A004CADE0 /* PershinTestAppUITests */ = {
+			isa = PBXGroup;
+			children = (
+				DD1CC0A6261DD81A004CADE0 /* PershinTestAppUITests.swift */,
+				DD1CC0A8261DD81A004CADE0 /* Info.plist */,
+			);
+			path = PershinTestAppUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		DD1CC080261DD817004CADE0 /* PershinTestApp */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DD1CC0AB261DD81A004CADE0 /* Build configuration list for PBXNativeTarget "PershinTestApp" */;
+			buildPhases = (
+				DD1CC07D261DD817004CADE0 /* Sources */,
+				DD1CC07E261DD817004CADE0 /* Frameworks */,
+				DD1CC07F261DD817004CADE0 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = PershinTestApp;
+			productName = PershinTestApp;
+			productReference = DD1CC081261DD817004CADE0 /* PershinTestApp.app */;
+			productType = "com.apple.product-type.application";
+		};
+		DD1CC096261DD81A004CADE0 /* PershinTestAppTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DD1CC0AE261DD81A004CADE0 /* Build configuration list for PBXNativeTarget "PershinTestAppTests" */;
+			buildPhases = (
+				DD1CC093261DD81A004CADE0 /* Sources */,
+				DD1CC094261DD81A004CADE0 /* Frameworks */,
+				DD1CC095261DD81A004CADE0 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				DD1CC099261DD81A004CADE0 /* PBXTargetDependency */,
+			);
+			name = PershinTestAppTests;
+			productName = PershinTestAppTests;
+			productReference = DD1CC097261DD81A004CADE0 /* PershinTestAppTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		DD1CC0A1261DD81A004CADE0 /* PershinTestAppUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DD1CC0B1261DD81A004CADE0 /* Build configuration list for PBXNativeTarget "PershinTestAppUITests" */;
+			buildPhases = (
+				DD1CC09E261DD81A004CADE0 /* Sources */,
+				DD1CC09F261DD81A004CADE0 /* Frameworks */,
+				DD1CC0A0261DD81A004CADE0 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				DD1CC0A4261DD81A004CADE0 /* PBXTargetDependency */,
+			);
+			name = PershinTestAppUITests;
+			productName = PershinTestAppUITests;
+			productReference = DD1CC0A2261DD81A004CADE0 /* PershinTestAppUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		DD1CC079261DD817004CADE0 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1240;
+				LastUpgradeCheck = 1240;
+				TargetAttributes = {
+					DD1CC080261DD817004CADE0 = {
+						CreatedOnToolsVersion = 12.4;
+					};
+					DD1CC096261DD81A004CADE0 = {
+						CreatedOnToolsVersion = 12.4;
+						TestTargetID = DD1CC080261DD817004CADE0;
+					};
+					DD1CC0A1261DD81A004CADE0 = {
+						CreatedOnToolsVersion = 12.4;
+						TestTargetID = DD1CC080261DD817004CADE0;
+					};
+				};
+			};
+			buildConfigurationList = DD1CC07C261DD817004CADE0 /* Build configuration list for PBXProject "PershinTestApp" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = DD1CC078261DD817004CADE0;
+			productRefGroup = DD1CC082261DD817004CADE0 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				DD1CC080261DD817004CADE0 /* PershinTestApp */,
+				DD1CC096261DD81A004CADE0 /* PershinTestAppTests */,
+				DD1CC0A1261DD81A004CADE0 /* PershinTestAppUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		DD1CC07F261DD817004CADE0 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DD1CC091261DD81A004CADE0 /* LaunchScreen.storyboard in Resources */,
+				DD1CC08E261DD81A004CADE0 /* Assets.xcassets in Resources */,
+				DD1CC08C261DD817004CADE0 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DD1CC095261DD81A004CADE0 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DD1CC0A0261DD81A004CADE0 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		DD1CC07D261DD817004CADE0 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DD1CC089261DD817004CADE0 /* ViewController.swift in Sources */,
+				DD1CC085261DD817004CADE0 /* AppDelegate.swift in Sources */,
+				DD1CC087261DD817004CADE0 /* SceneDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DD1CC093261DD81A004CADE0 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DD1CC09C261DD81A004CADE0 /* PershinTestAppTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DD1CC09E261DD81A004CADE0 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DD1CC0A7261DD81A004CADE0 /* PershinTestAppUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		DD1CC099261DD81A004CADE0 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = DD1CC080261DD817004CADE0 /* PershinTestApp */;
+			targetProxy = DD1CC098261DD81A004CADE0 /* PBXContainerItemProxy */;
+		};
+		DD1CC0A4261DD81A004CADE0 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = DD1CC080261DD817004CADE0 /* PershinTestApp */;
+			targetProxy = DD1CC0A3261DD81A004CADE0 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		DD1CC08A261DD817004CADE0 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				DD1CC08B261DD817004CADE0 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		DD1CC08F261DD81A004CADE0 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				DD1CC090261DD81A004CADE0 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		DD1CC0A9261DD81A004CADE0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		DD1CC0AA261DD81A004CADE0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		DD1CC0AC261DD81A004CADE0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 7QHM7AYE58;
+				INFOPLIST_FILE = PershinTestApp/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.pershin.test.app.PershinTestApp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		DD1CC0AD261DD81A004CADE0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 7QHM7AYE58;
+				INFOPLIST_FILE = PershinTestApp/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.pershin.test.app.PershinTestApp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		DD1CC0AF261DD81A004CADE0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 7QHM7AYE58;
+				INFOPLIST_FILE = PershinTestAppTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.pershin.test.app.PershinTestAppTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/PershinTestApp.app/PershinTestApp";
+			};
+			name = Debug;
+		};
+		DD1CC0B0261DD81A004CADE0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 7QHM7AYE58;
+				INFOPLIST_FILE = PershinTestAppTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.pershin.test.app.PershinTestAppTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/PershinTestApp.app/PershinTestApp";
+			};
+			name = Release;
+		};
+		DD1CC0B2261DD81A004CADE0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 7QHM7AYE58;
+				INFOPLIST_FILE = PershinTestAppUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.pershin.test.app.PershinTestAppUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = PershinTestApp;
+			};
+			name = Debug;
+		};
+		DD1CC0B3261DD81A004CADE0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 7QHM7AYE58;
+				INFOPLIST_FILE = PershinTestAppUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.pershin.test.app.PershinTestAppUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = PershinTestApp;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		DD1CC07C261DD817004CADE0 /* Build configuration list for PBXProject "PershinTestApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DD1CC0A9261DD81A004CADE0 /* Debug */,
+				DD1CC0AA261DD81A004CADE0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		DD1CC0AB261DD81A004CADE0 /* Build configuration list for PBXNativeTarget "PershinTestApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DD1CC0AC261DD81A004CADE0 /* Debug */,
+				DD1CC0AD261DD81A004CADE0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		DD1CC0AE261DD81A004CADE0 /* Build configuration list for PBXNativeTarget "PershinTestAppTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DD1CC0AF261DD81A004CADE0 /* Debug */,
+				DD1CC0B0261DD81A004CADE0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		DD1CC0B1261DD81A004CADE0 /* Build configuration list for PBXNativeTarget "PershinTestAppUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DD1CC0B2261DD81A004CADE0 /* Debug */,
+				DD1CC0B3261DD81A004CADE0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = DD1CC079261DD817004CADE0 /* Project object */;
+}
