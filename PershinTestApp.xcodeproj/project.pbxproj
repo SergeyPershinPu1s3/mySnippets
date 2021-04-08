@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		DD001934262045BC0082B338 /* CellViewModelProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD001933262045BC0082B338 /* CellViewModelProtocol.swift */; };
+		DD00193D2620479A0082B338 /* Cell+Register.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD00193C2620479A0082B338 /* Cell+Register.swift */; };
+		DD00194426204D780082B338 /* ViewControllerViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD00194326204D780082B338 /* ViewControllerViewModel.swift */; };
+		DD00194C26204F370082B338 /* UIStatusBarStyle+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD00194B26204F370082B338 /* UIStatusBarStyle+Extension.swift */; };
 		DD1CC085261DD817004CADE0 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD1CC084261DD817004CADE0 /* AppDelegate.swift */; };
 		DD1CC087261DD817004CADE0 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD1CC086261DD817004CADE0 /* SceneDelegate.swift */; };
 		DD1CC089261DD817004CADE0 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD1CC088261DD817004CADE0 /* ViewController.swift */; };
@@ -15,6 +19,16 @@
 		DD1CC091261DD81A004CADE0 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DD1CC08F261DD81A004CADE0 /* LaunchScreen.storyboard */; };
 		DD1CC09C261DD81A004CADE0 /* PershinTestAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD1CC09B261DD81A004CADE0 /* PershinTestAppTests.swift */; };
 		DD1CC0A7261DD81A004CADE0 /* PershinTestAppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD1CC0A6261DD81A004CADE0 /* PershinTestAppUITests.swift */; };
+		DD57E85F261F00AF00911F95 /* Observable.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD57E85E261F00AF00911F95 /* Observable.swift */; };
+		DD57E867261F026500911F95 /* ViewModelProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD57E866261F026500911F95 /* ViewModelProtocol.swift */; };
+		DD57E86C261F027800911F95 /* TableViewModelProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD57E86B261F027800911F95 /* TableViewModelProtocol.swift */; };
+		DD57E871261F028900911F95 /* Coordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD57E870261F028900911F95 /* Coordinator.swift */; };
+		DD57E876261F029200911F95 /* Router.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD57E875261F029200911F95 /* Router.swift */; };
+		DD57E87B261F02B600911F95 /* NibView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD57E87A261F02B600911F95 /* NibView.swift */; };
+		DD57E882261F070700911F95 /* CustomNibView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD57E881261F070700911F95 /* CustomNibView.swift */; };
+		DD57E88A261F071400911F95 /* CustomNibView.xib in Resources */ = {isa = PBXBuildFile; fileRef = DD57E889261F071400911F95 /* CustomNibView.xib */; };
+		DD57E88F261F0AA200911F95 /* AlertViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD57E88E261F0AA200911F95 /* AlertViewModel.swift */; };
+		DD57E894261F0BD000911F95 /* UIViewController+AlertViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD57E893261F0BD000911F95 /* UIViewController+AlertViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -35,6 +49,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		DD001933262045BC0082B338 /* CellViewModelProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CellViewModelProtocol.swift; sourceTree = "<group>"; };
+		DD00193C2620479A0082B338 /* Cell+Register.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Cell+Register.swift"; sourceTree = "<group>"; };
+		DD00194326204D780082B338 /* ViewControllerViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewControllerViewModel.swift; sourceTree = "<group>"; };
+		DD00194B26204F370082B338 /* UIStatusBarStyle+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIStatusBarStyle+Extension.swift"; sourceTree = "<group>"; };
 		DD1CC081261DD817004CADE0 /* PershinTestApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PershinTestApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DD1CC084261DD817004CADE0 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		DD1CC086261DD817004CADE0 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -49,6 +67,16 @@
 		DD1CC0A2261DD81A004CADE0 /* PershinTestAppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PershinTestAppUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		DD1CC0A6261DD81A004CADE0 /* PershinTestAppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PershinTestAppUITests.swift; sourceTree = "<group>"; };
 		DD1CC0A8261DD81A004CADE0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DD57E85E261F00AF00911F95 /* Observable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Observable.swift; sourceTree = "<group>"; };
+		DD57E866261F026500911F95 /* ViewModelProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewModelProtocol.swift; sourceTree = "<group>"; };
+		DD57E86B261F027800911F95 /* TableViewModelProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewModelProtocol.swift; sourceTree = "<group>"; };
+		DD57E870261F028900911F95 /* Coordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Coordinator.swift; sourceTree = "<group>"; };
+		DD57E875261F029200911F95 /* Router.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Router.swift; sourceTree = "<group>"; };
+		DD57E87A261F02B600911F95 /* NibView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NibView.swift; sourceTree = "<group>"; };
+		DD57E881261F070700911F95 /* CustomNibView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomNibView.swift; sourceTree = "<group>"; };
+		DD57E889261F071400911F95 /* CustomNibView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CustomNibView.xib; sourceTree = "<group>"; };
+		DD57E88E261F0AA200911F95 /* AlertViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlertViewModel.swift; sourceTree = "<group>"; };
+		DD57E893261F0BD000911F95 /* UIViewController+AlertViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+AlertViewModel.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -76,6 +104,16 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		DD00194226204D570082B338 /* Simple screens */ = {
+			isa = PBXGroup;
+			children = (
+				DD1CC08A261DD817004CADE0 /* Main.storyboard */,
+				DD1CC088261DD817004CADE0 /* ViewController.swift */,
+				DD00194326204D780082B338 /* ViewControllerViewModel.swift */,
+			);
+			path = "Simple screens";
+			sourceTree = "<group>";
+		};
 		DD1CC078261DD817004CADE0 = {
 			isa = PBXGroup;
 			children = (
@@ -99,10 +137,10 @@
 		DD1CC083261DD817004CADE0 /* PershinTestApp */ = {
 			isa = PBXGroup;
 			children = (
+				DD57E85D261DDE1A00911F95 /* Examples */,
+				DD57E853261DDDA500911F95 /* Snippets */,
 				DD1CC084261DD817004CADE0 /* AppDelegate.swift */,
 				DD1CC086261DD817004CADE0 /* SceneDelegate.swift */,
-				DD1CC088261DD817004CADE0 /* ViewController.swift */,
-				DD1CC08A261DD817004CADE0 /* Main.storyboard */,
 				DD1CC08D261DD81A004CADE0 /* Assets.xcassets */,
 				DD1CC08F261DD81A004CADE0 /* LaunchScreen.storyboard */,
 				DD1CC092261DD81A004CADE0 /* Info.plist */,
@@ -126,6 +164,122 @@
 				DD1CC0A8261DD81A004CADE0 /* Info.plist */,
 			);
 			path = PershinTestAppUITests;
+			sourceTree = "<group>";
+		};
+		DD57E853261DDDA500911F95 /* Snippets */ = {
+			isa = PBXGroup;
+			children = (
+				DD57E855261DDDB800911F95 /* Extensions */,
+				DD57E854261DDDAE00911F95 /* Architecture */,
+			);
+			path = Snippets;
+			sourceTree = "<group>";
+		};
+		DD57E854261DDDAE00911F95 /* Architecture */ = {
+			isa = PBXGroup;
+			children = (
+				DD57E85B261DDDE600911F95 /* Data */,
+				DD57E85A261DDDDF00911F95 /* Network */,
+				DD57E859261DDDD700911F95 /* UI */,
+				DD57E856261DDDC500911F95 /* MVVM */,
+			);
+			path = Architecture;
+			sourceTree = "<group>";
+		};
+		DD57E855261DDDB800911F95 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				DD57E858261DDDD100911F95 /* UIKit */,
+				DD57E857261DDDCC00911F95 /* Foundation */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		DD57E856261DDDC500911F95 /* MVVM */ = {
+			isa = PBXGroup;
+			children = (
+				DD57E898261F0D2700911F95 /* Table */,
+				DD57E85E261F00AF00911F95 /* Observable.swift */,
+				DD57E866261F026500911F95 /* ViewModelProtocol.swift */,
+				DD57E88E261F0AA200911F95 /* AlertViewModel.swift */,
+			);
+			path = MVVM;
+			sourceTree = "<group>";
+		};
+		DD57E857261DDDCC00911F95 /* Foundation */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Foundation;
+			sourceTree = "<group>";
+		};
+		DD57E858261DDDD100911F95 /* UIKit */ = {
+			isa = PBXGroup;
+			children = (
+				DD57E87A261F02B600911F95 /* NibView.swift */,
+				DD57E893261F0BD000911F95 /* UIViewController+AlertViewModel.swift */,
+				DD00193C2620479A0082B338 /* Cell+Register.swift */,
+				DD00194B26204F370082B338 /* UIStatusBarStyle+Extension.swift */,
+			);
+			path = UIKit;
+			sourceTree = "<group>";
+		};
+		DD57E859261DDDD700911F95 /* UI */ = {
+			isa = PBXGroup;
+			children = (
+				DD57E85C261DDDFE00911F95 /* Coordinator */,
+			);
+			path = UI;
+			sourceTree = "<group>";
+		};
+		DD57E85A261DDDDF00911F95 /* Network */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
+		DD57E85B261DDDE600911F95 /* Data */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Data;
+			sourceTree = "<group>";
+		};
+		DD57E85C261DDDFE00911F95 /* Coordinator */ = {
+			isa = PBXGroup;
+			children = (
+				DD57E870261F028900911F95 /* Coordinator.swift */,
+				DD57E875261F029200911F95 /* Router.swift */,
+			);
+			path = Coordinator;
+			sourceTree = "<group>";
+		};
+		DD57E85D261DDE1A00911F95 /* Examples */ = {
+			isa = PBXGroup;
+			children = (
+				DD00194226204D570082B338 /* Simple screens */,
+				DD57E880261F06E700911F95 /* CustomNibView */,
+			);
+			path = Examples;
+			sourceTree = "<group>";
+		};
+		DD57E880261F06E700911F95 /* CustomNibView */ = {
+			isa = PBXGroup;
+			children = (
+				DD57E881261F070700911F95 /* CustomNibView.swift */,
+				DD57E889261F071400911F95 /* CustomNibView.xib */,
+			);
+			path = CustomNibView;
+			sourceTree = "<group>";
+		};
+		DD57E898261F0D2700911F95 /* Table */ = {
+			isa = PBXGroup;
+			children = (
+				DD57E86B261F027800911F95 /* TableViewModelProtocol.swift */,
+				DD001933262045BC0082B338 /* CellViewModelProtocol.swift */,
+			);
+			path = Table;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -232,6 +386,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				DD1CC091261DD81A004CADE0 /* LaunchScreen.storyboard in Resources */,
+				DD57E88A261F071400911F95 /* CustomNibView.xib in Resources */,
 				DD1CC08E261DD81A004CADE0 /* Assets.xcassets in Resources */,
 				DD1CC08C261DD817004CADE0 /* Main.storyboard in Resources */,
 			);
@@ -258,9 +413,22 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DD57E876261F029200911F95 /* Router.swift in Sources */,
+				DD001934262045BC0082B338 /* CellViewModelProtocol.swift in Sources */,
+				DD57E85F261F00AF00911F95 /* Observable.swift in Sources */,
+				DD57E867261F026500911F95 /* ViewModelProtocol.swift in Sources */,
 				DD1CC089261DD817004CADE0 /* ViewController.swift in Sources */,
 				DD1CC085261DD817004CADE0 /* AppDelegate.swift in Sources */,
+				DD00194C26204F370082B338 /* UIStatusBarStyle+Extension.swift in Sources */,
+				DD57E88F261F0AA200911F95 /* AlertViewModel.swift in Sources */,
+				DD00194426204D780082B338 /* ViewControllerViewModel.swift in Sources */,
+				DD57E882261F070700911F95 /* CustomNibView.swift in Sources */,
+				DD57E87B261F02B600911F95 /* NibView.swift in Sources */,
+				DD57E894261F0BD000911F95 /* UIViewController+AlertViewModel.swift in Sources */,
+				DD00193D2620479A0082B338 /* Cell+Register.swift in Sources */,
 				DD1CC087261DD817004CADE0 /* SceneDelegate.swift in Sources */,
+				DD57E86C261F027800911F95 /* TableViewModelProtocol.swift in Sources */,
+				DD57E871261F028900911F95 /* Coordinator.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
