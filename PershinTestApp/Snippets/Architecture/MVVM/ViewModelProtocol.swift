@@ -9,8 +9,8 @@ import Foundation
 
 
 
-class BaseViewModel {
-    var showAlert:((AlertViewModel) -> ())?
-    var showActionSheet:((AlertViewModel) -> ())?
-    var isLoading: ((Bool) -> ())?
+protocol ViewControllerViewModelProtocol {
+    var showAlertEvent: Observable<AlertViewModel?> { get }
+    var showActionSheetEvent: Observable<AlertViewModel?> { get }
+    var showLoadingEvent: Observable<Bool> { get }
 }

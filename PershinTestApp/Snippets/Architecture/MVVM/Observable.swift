@@ -8,6 +8,8 @@
 import Foundation
 
 
+typealias ObservableEvent = Observable<Void>
+
 class Observable<T> {
 
     typealias Handler = (T) -> Void
@@ -25,8 +27,17 @@ class Observable<T> {
     }
 
     func bind(_ handler: @escaping Handler) {
-        handler(self.value)
         self.handlers.append(handler)
     }
+}
+
+
+extension Observable where T == Void {
+    convenience init() {
+        self.init(())
+    }
     
+    func fire() {
+        self.value = ()
+    }
 }

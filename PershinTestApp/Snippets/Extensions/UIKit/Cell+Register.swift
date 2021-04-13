@@ -19,14 +19,17 @@ extension UITableView {
     func registerClass(cellType: UITableViewCell.Type) {
         self.register(cellType, forCellReuseIdentifier: String(describing: cellType))
     }
+    
     func registerNib(cellType: UITableViewCell.Type) {
         let className = String(describing: cellType)
         let bundle = Bundle(for: cellType)
         self.register(UINib(nibName: className, bundle: bundle), forCellReuseIdentifier: String(describing: cellType))
     }
+    
     func registerViewClass(viewType: UIView.Type) {
         self.register(viewType, forHeaderFooterViewReuseIdentifier: String(describing: viewType))
     }
+    
     func registerViewNib(viewType: UIView.Type) {
         let className = String(describing: viewType)
         let bundle = Bundle(for: viewType)
@@ -52,14 +55,17 @@ extension UICollectionView {
     func registerClass(cellType: UICollectionViewCell.Type) {
         self.register(cellType, forCellWithReuseIdentifier: String(describing: cellType))
     }
+    
     func registerNib(cellType: UICollectionViewCell.Type) {
         let className = String(describing: cellType)
         let bundle = Bundle(for: cellType)
         self.register(UINib(nibName: className, bundle: bundle), forCellWithReuseIdentifier: String(describing: cellType))
     }
+    
     func registerViewClass(type: ViewType, cellType: UICollectionReusableView.Type) {
         self.register(cellType, forSupplementaryViewOfKind: type.value, withReuseIdentifier: String(describing: cellType))
     }
+    
     func registerViewNib(type: ViewType, viewType: UICollectionReusableView.Type) {
         let className = String(describing: viewType)
         let bundle = Bundle(for: viewType)

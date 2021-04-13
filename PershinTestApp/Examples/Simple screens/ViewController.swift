@@ -8,15 +8,19 @@
 import UIKit
 
 
-protocol ViewControllerViewModelProtocol {
+protocol ExampleViewModelProtocol: ViewControllerViewModelProtocol {
     func textNeedsChange()
     var text: Observable<String> { get }
-    var event: Observable<Void> { get }
+    var event: ObservableEvent { get }
 }
 
 
 class ViewController: UIViewController {
-    private var viewModel: ViewControllerViewModelProtocol!
+    private var viewModel: ExampleViewModelProtocol! {
+        didSet {
+            self.loadViewModel()
+        }
+    }
     
     @IBOutlet private weak var testView: CustomNibView!
     
@@ -29,16 +33,30 @@ class ViewController: UIViewController {
         
         //can be constructed in some other place
         self.viewModel = ViewControllerViewModel()
-        
+    }
+    
+    private func loadViewModel() {
         self.viewModel.text.bind {[weak self] (value) in
-            //self?.testView.set(text: value)
+            guard let s = self else { return }
+            s.testView.set(text: value)
         }
         
-        self.viewModel.event.bind {[weak self] (value) in
+        self.viewModel.event.bind {[weak self] (_) in
             guard let s = self else { return }
-            s.testView.set(text: s.viewModel.text.value)
-            //self?.testView.set(text: value)
+            s.testView.set(text: "3 sec passed!")
         }
+        
+        self.viewModel.showAlertEvent.bind {[weak self] (alertVM) in
+            guard let s = self, let alertVM = alertVM else { return }
+            s.showAlert(alertVM)
+        }
+        
+        self.viewModel.showActionSheetEvent.bind {[weak self] (alertVM) in
+            guard let s = self, let alertVM = alertVM else { return }
+            s.showActionSheet(alertVM)
+        }
+
+        self.testView.set(text: self.viewModel.text.value)
     }
 }
 

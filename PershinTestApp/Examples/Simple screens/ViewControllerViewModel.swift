@@ -8,15 +8,24 @@
 import Foundation
 
 
-class ViewControllerViewModel: BaseViewModel, ViewControllerViewModelProtocol {
+class ViewControllerViewModel: ViewControllerViewModelProtocol, ExampleViewModelProtocol {
     func textNeedsChange() {
+        self.text.value = Date().description
         DispatchQueue.main.asyncAfter(deadline: .now() + 3) {
-            self.text.value = Date().description
-            self.event.value = ()
+            self.event.fire()
+        }
+        
+        DispatchQueue.main.asyncAfter(deadline: .now() + 5) {
+            let testAlert = AlertViewModel(description: "Hello world!")
+            self.showActionSheetEvent.value = testAlert
         }
     }
     
     var text: Observable<String> = Observable("")
-    var event: Observable<Void> = Observable(())
+    var event: ObservableEvent = ObservableEvent()
+    
+    var showAlertEvent: Observable<AlertViewModel?> = Observable(nil)
+    var showActionSheetEvent: Observable<AlertViewModel?> = Observable(nil)
+    var showLoadingEvent: Observable<Bool> = Observable(false)
 }
 

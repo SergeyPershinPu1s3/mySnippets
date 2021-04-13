@@ -19,6 +19,8 @@
 		DD1CC091261DD81A004CADE0 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DD1CC08F261DD81A004CADE0 /* LaunchScreen.storyboard */; };
 		DD1CC09C261DD81A004CADE0 /* PershinTestAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD1CC09B261DD81A004CADE0 /* PershinTestAppTests.swift */; };
 		DD1CC0A7261DD81A004CADE0 /* PershinTestAppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD1CC0A6261DD81A004CADE0 /* PershinTestAppUITests.swift */; };
+		DD3499772625A0AA005A6F57 /* Misc+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD3499762625A0AA005A6F57 /* Misc+Extension.swift */; };
+		DD34997C2625A161005A6F57 /* CoreData.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD34997B2625A161005A6F57 /* CoreData.swift */; };
 		DD57E85F261F00AF00911F95 /* Observable.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD57E85E261F00AF00911F95 /* Observable.swift */; };
 		DD57E867261F026500911F95 /* ViewModelProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD57E866261F026500911F95 /* ViewModelProtocol.swift */; };
 		DD57E86C261F027800911F95 /* TableViewModelProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD57E86B261F027800911F95 /* TableViewModelProtocol.swift */; };
@@ -67,6 +69,8 @@
 		DD1CC0A2261DD81A004CADE0 /* PershinTestAppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PershinTestAppUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		DD1CC0A6261DD81A004CADE0 /* PershinTestAppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PershinTestAppUITests.swift; sourceTree = "<group>"; };
 		DD1CC0A8261DD81A004CADE0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DD3499762625A0AA005A6F57 /* Misc+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Misc+Extension.swift"; sourceTree = "<group>"; };
+		DD34997B2625A161005A6F57 /* CoreData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreData.swift; sourceTree = "<group>"; };
 		DD57E85E261F00AF00911F95 /* Observable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Observable.swift; sourceTree = "<group>"; };
 		DD57E866261F026500911F95 /* ViewModelProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewModelProtocol.swift; sourceTree = "<group>"; };
 		DD57E86B261F027800911F95 /* TableViewModelProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewModelProtocol.swift; sourceTree = "<group>"; };
@@ -209,6 +213,7 @@
 		DD57E857261DDDCC00911F95 /* Foundation */ = {
 			isa = PBXGroup;
 			children = (
+				DD3499762625A0AA005A6F57 /* Misc+Extension.swift */,
 			);
 			path = Foundation;
 			sourceTree = "<group>";
@@ -242,6 +247,7 @@
 		DD57E85B261DDDE600911F95 /* Data */ = {
 			isa = PBXGroup;
 			children = (
+				DD34997B2625A161005A6F57 /* CoreData.swift */,
 			);
 			path = Data;
 			sourceTree = "<group>";
@@ -417,7 +423,9 @@
 				DD001934262045BC0082B338 /* CellViewModelProtocol.swift in Sources */,
 				DD57E85F261F00AF00911F95 /* Observable.swift in Sources */,
 				DD57E867261F026500911F95 /* ViewModelProtocol.swift in Sources */,
+				DD34997C2625A161005A6F57 /* CoreData.swift in Sources */,
 				DD1CC089261DD817004CADE0 /* ViewController.swift in Sources */,
+				DD3499772625A0AA005A6F57 /* Misc+Extension.swift in Sources */,
 				DD1CC085261DD817004CADE0 /* AppDelegate.swift in Sources */,
 				DD00194C26204F370082B338 /* UIStatusBarStyle+Extension.swift in Sources */,
 				DD57E88F261F0AA200911F95 /* AlertViewModel.swift in Sources */,
