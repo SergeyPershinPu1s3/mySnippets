@@ -21,6 +21,8 @@
 		DD1CC0A7261DD81A004CADE0 /* PershinTestAppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD1CC0A6261DD81A004CADE0 /* PershinTestAppUITests.swift */; };
 		DD3499772625A0AA005A6F57 /* Misc+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD3499762625A0AA005A6F57 /* Misc+Extension.swift */; };
 		DD34997C2625A161005A6F57 /* CoreData.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD34997B2625A161005A6F57 /* CoreData.swift */; };
+		DD34998E26271C0B005A6F57 /* DateFormatter+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD34998D26271C0B005A6F57 /* DateFormatter+Extension.swift */; };
+		DD41F21B269855A20033941F /* KeyboardHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD41F21A269855A20033941F /* KeyboardHandler.swift */; };
 		DD57E85F261F00AF00911F95 /* Observable.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD57E85E261F00AF00911F95 /* Observable.swift */; };
 		DD57E867261F026500911F95 /* ViewModelProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD57E866261F026500911F95 /* ViewModelProtocol.swift */; };
 		DD57E86C261F027800911F95 /* TableViewModelProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD57E86B261F027800911F95 /* TableViewModelProtocol.swift */; };
@@ -71,6 +73,8 @@
 		DD1CC0A8261DD81A004CADE0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		DD3499762625A0AA005A6F57 /* Misc+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Misc+Extension.swift"; sourceTree = "<group>"; };
 		DD34997B2625A161005A6F57 /* CoreData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreData.swift; sourceTree = "<group>"; };
+		DD34998D26271C0B005A6F57 /* DateFormatter+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "DateFormatter+Extension.swift"; sourceTree = "<group>"; };
+		DD41F21A269855A20033941F /* KeyboardHandler.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KeyboardHandler.swift; sourceTree = "<group>"; };
 		DD57E85E261F00AF00911F95 /* Observable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Observable.swift; sourceTree = "<group>"; };
 		DD57E866261F026500911F95 /* ViewModelProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewModelProtocol.swift; sourceTree = "<group>"; };
 		DD57E86B261F027800911F95 /* TableViewModelProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewModelProtocol.swift; sourceTree = "<group>"; };
@@ -214,6 +218,7 @@
 			isa = PBXGroup;
 			children = (
 				DD3499762625A0AA005A6F57 /* Misc+Extension.swift */,
+				DD34998D26271C0B005A6F57 /* DateFormatter+Extension.swift */,
 			);
 			path = Foundation;
 			sourceTree = "<group>";
@@ -221,6 +226,7 @@
 		DD57E858261DDDD100911F95 /* UIKit */ = {
 			isa = PBXGroup;
 			children = (
+				DD41F21A269855A20033941F /* KeyboardHandler.swift */,
 				DD57E87A261F02B600911F95 /* NibView.swift */,
 				DD57E893261F0BD000911F95 /* UIViewController+AlertViewModel.swift */,
 				DD00193C2620479A0082B338 /* Cell+Register.swift */,
@@ -433,6 +439,8 @@
 				DD57E882261F070700911F95 /* CustomNibView.swift in Sources */,
 				DD57E87B261F02B600911F95 /* NibView.swift in Sources */,
 				DD57E894261F0BD000911F95 /* UIViewController+AlertViewModel.swift in Sources */,
+				DD34998E26271C0B005A6F57 /* DateFormatter+Extension.swift in Sources */,
+				DD41F21B269855A20033941F /* KeyboardHandler.swift in Sources */,
 				DD00193D2620479A0082B338 /* Cell+Register.swift in Sources */,
 				DD1CC087261DD817004CADE0 /* SceneDelegate.swift in Sources */,
 				DD57E86C261F027800911F95 /* TableViewModelProtocol.swift in Sources */,

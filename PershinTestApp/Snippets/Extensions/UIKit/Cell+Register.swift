@@ -35,6 +35,10 @@ extension UITableView {
         let bundle = Bundle(for: viewType)
         self.register(UINib(nibName: className, bundle: bundle), forHeaderFooterViewReuseIdentifier: String(describing: viewType))
     }
+    
+    func dequeue<Cell: UITableViewCell>(cellType: Cell.Type) -> Cell {
+        return self.dequeueReusableCell(withIdentifier: String(describing: cellType)) as! Cell
+    }
 }
 
 extension UICollectionView {
@@ -60,6 +64,10 @@ extension UICollectionView {
         let className = String(describing: cellType)
         let bundle = Bundle(for: cellType)
         self.register(UINib(nibName: className, bundle: bundle), forCellWithReuseIdentifier: String(describing: cellType))
+    }
+    
+    func dequeue<Cell: UICollectionViewCell>(cellType: Cell.Type, indexPath: IndexPath) -> Cell {
+        return self.dequeueReusableCell(withReuseIdentifier: String(describing: cellType), for: indexPath) as! Cell
     }
     
     func registerViewClass(type: ViewType, cellType: UICollectionReusableView.Type) {

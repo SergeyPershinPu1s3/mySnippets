@@ -43,10 +43,16 @@ class NibView: UIView, NibViewProtocol {
     override init(frame: CGRect) {
         super.init(frame: frame)
         self.loadContent()
+        self.setupContent()
     }
     
     required init?(coder aDecoder: NSCoder){
         super.init(coder: aDecoder)
         self.loadContent()
+        self.setupContent()
+    }
+    
+    func setupContent() {
+        fatalError("When NibView is used, setupContent() must be overriden")
     }
 }

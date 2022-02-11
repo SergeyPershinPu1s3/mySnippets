@@ -7,6 +7,59 @@
 
 import UIKit
 
+
+func validatePattern(field: [String], start: Int, step: Int, value: String) -> Bool {
+    var countOfChecks = 3
+    for (index, char) in field.enumerated() {
+        guard index >= start else { continue }
+        if (index - start) % step == 0 {
+            countOfChecks -= 1
+            if countOfChecks < 0 {
+                break
+            }
+            if char != value {
+                return false
+            }
+        }
+    }
+    return true
+}
+
+func whoWon(_ board: [[String]]) -> String {
+    guard board.count == 3, (board.filter { $0.count != 3 }).isEmpty else { return "Tie" }
+    let boardFlatmap = (board.flatMap { $0 })
+    let boardSet = Set(boardFlatmap)
+    guard boardFlatmap.count == 9, boardSet.count == 2 else { return "Tie" }
+    guard boardSet.contains("X"), boardSet.contains("O") else { return "Tie" }
+    
+    let horizontalChecks = [(0, 1), (3, 1), (6, 1)]
+    let verticalChecks = [(0, 3), (1, 3), (2, 3)]
+    let diagonalChecks = [(0, 4), (2, 2)]
+    
+    let totalChecks = horizontalChecks + verticalChecks + diagonalChecks
+    var xSolutionExists = false
+    var oSolutionExists = false
+    for check in totalChecks {
+        if validatePattern(field: boardFlatmap, start: check.0, step: check.1, value: "X") {
+            xSolutionExists = true
+        }
+        if validatePattern(field: boardFlatmap, start: check.0, step: check.1, value: "O") {
+            oSolutionExists = true
+        }
+    }
+    if xSolutionExists && !oSolutionExists {
+        return "X"
+    } else if !xSolutionExists && oSolutionExists {
+        return "O"
+    }
+    
+    return "Tie"
+}
+
+
+
+
+
 @main
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
@@ -23,6 +76,13 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
             window.makeKeyAndVisible()
             self.window = window
         }
+        
+        
+        whoWon([
+                    ["O", "O", "X"],
+                    ["X", "X", "X"],
+                    ["O", "O", "O"],
+                ])
         
         // Override point for customization after application launch.
         return true
